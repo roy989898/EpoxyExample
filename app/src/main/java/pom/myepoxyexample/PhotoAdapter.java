@@ -16,7 +16,7 @@ public class PhotoAdapter extends EpoxyAdapter {
     private final LoaderModel loaderModel = new LoaderModel();
 
     public PhotoAdapter() {
-        addModels(new HeaderModel("My Photos"), loaderModel);
+//        addModels(new HeaderModel("My Photos"), new HeaderModel("My Photos"), new HeaderModel("My Photos"), new HeaderModel("My Photos"), new HeaderModel("My Photos"), new HeaderModel("My Photos"), new HeaderModel("My Photos"));
     }
 
     public void addPhotos(Collection<Photo> photos) {

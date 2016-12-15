@@ -1,6 +1,8 @@
 package pom.myepoxyexample.model;
 
+import com.airbnb.epoxy.EpoxyHolder;
 import com.airbnb.epoxy.EpoxyModel;
+import com.airbnb.epoxy.EpoxyModelWithHolder;
 
 import pom.myepoxyexample.Photo;
 
@@ -8,15 +10,15 @@ import pom.myepoxyexample.Photo;
  * Created by Roy.Leung on 15/12/16.
  */
 
-public class PhotoModel extends EpoxyModel{
-    private Photo photo;
+public class PhotoModel extends EpoxyModelWithHolder{
 
-    public PhotoModel(Photo photo) {
-        this.photo = photo;
+    @Override
+    protected EpoxyHolder createNewHolder() {
+        return null;
     }
 
     @Override
     protected int getDefaultLayout() {
-        return 0;
+        return R;
     }
 }
