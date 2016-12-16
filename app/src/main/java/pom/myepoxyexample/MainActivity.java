@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        SimpleAdapter adapter = new SimpleAdapter();
+        ComplexAdapter adapter = new ComplexAdapter(this);
         LinearLayoutManager linearLayoutMnager = new LinearLayoutManager(this);
         rv.setLayoutManager(linearLayoutMnager);
         rv.setAdapter(adapter);
