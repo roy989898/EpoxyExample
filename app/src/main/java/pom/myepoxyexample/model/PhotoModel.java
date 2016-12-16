@@ -33,7 +33,7 @@ public class PhotoModel extends EpoxyModelWithHolder<PhotoModel.PhotoHolder> {
 
     @Override
     protected int getDefaultLayout() {
-        return R.layout.photo_module_layout;
+        return R.layout.module_photo_layout;
     }
 
     @Override

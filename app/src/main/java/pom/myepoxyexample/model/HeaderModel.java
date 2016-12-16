@@ -24,7 +24,7 @@ public class HeaderModel extends EpoxyModelWithHolder<HeaderModel.HeaderHolder> 
 
     @Override
     protected int getDefaultLayout() {
-        return R.layout.header_module_layout;
+        return R.layout.module_header_layout;
     }
 
     @Override

@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.airbnb.epoxy.EpoxyAdapter;
 
+import pom.myepoxyexample.model.ButtonModel;
 import pom.myepoxyexample.model.HeaderModel;
 import pom.myepoxyexample.model.PhotoModel;
 
@@ -18,7 +19,10 @@ public class ComplexAdapter extends EpoxyAdapter {
     public ComplexAdapter(Context mContex) {
         this.mContex = mContex;
         String link = "http://heroes.values.com/4453/images/large/simle.jpg";
-        addModels(new HeaderModel("My Photos"), new PhotoModel(mContex, link));
+        HeaderModel header = new HeaderModel("My Photos");
+        ButtonModel button = new ButtonModel();
+        PhotoModel photo = new PhotoModel(mContex, link);
+        addModels(header,button,photo);
     }
 
     /*public void addPhotos(Collection<Photo> photos) {
